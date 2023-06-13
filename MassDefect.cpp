@@ -18,7 +18,6 @@ int main(){
         cin >> NeutronAmount;
     // Mass Defect Formula
     // (The difference between the mass of an isotope and its mass number)
-    double Proton = (ProtonAmount * 1.67262E-27) + (NeutronAmount * 1.67495E-27);
-    cout << "Neutron Mass: " << ((Mass * 1.66054E-27) - (ElectronAmount * 9.10915E-31)) << endl << "Proton Mass: " << Proton << endl;
-    cout << "Mass Defect: " << ((Mass * 1.66054E-27) - (ElectronAmount * 9.10915E-31)) - Proton << endl;
+    cout << "Neutron Mass: " << ((Mass * 1.66054E-27) - (ElectronAmount * 9.10915E-31)) << endl << "Proton Mass: " << (ProtonAmount * 1.67262E-27) + (NeutronAmount * 1.67495E-27) << endl;
+    cout << "Mass Defect: " << ((Mass * 1.66054E-27) - (ElectronAmount * 9.10915E-31)) - (ProtonAmount * 1.67262E-27) + (NeutronAmount * 1.67495E-27) << endl;
 }
